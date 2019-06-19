@@ -17,11 +17,11 @@ Door 8 keer \w te herhalen worden nu alle matches weergegeven waar 8 woordkarakt
 
 Het valt je misschien op dat de . ook geëscaped wordt, dit komt omdat de . normaal elk karakter zou matchen die denkbaar is. Nu zal voorbeeld 1 geselecteerd worden, maar elk afwijkende combinatie niet. Denk hierbij aan de extensies zoals .nl. of .org, maar ook de verhouding van 18 karakters voor de @. Om dit gemakkelijk op te delen zijn er de volgende Quantifiers beschikbaar:
 
-* 	= selecteert alle overeenkomende karakters van 0 of meer achter elkaar
-+ 	= selecteert alle overeenkomende karakters van 1 of meer achter elkaar
-? 	= selecteert alle overeenkomende karakters van 0 of 1 
-{3}	= selecteert alle overeenkomende karakters van exact 3 achter elkaar. Hier kan elk getal ingevuld worden
-{1-4}	= selecteert alle overeenkomende karakters in een reeks van 1 tm 4
+"*" 	  = selecteert alle overeenkomende karakters van 0 of meer achter elkaar
+"+" 	  = selecteert alle overeenkomende karakters van 1 of meer achter elkaar
+"?" 	  = selecteert alle overeenkomende karakters van 0 of 1 
+"{3}"	  = selecteert alle overeenkomende karakters van exact 3 achter elkaar. Hier kan elk getal ingevuld worden
+"{1-4}"	= selecteert alle overeenkomende karakters in een reeks van 1 tm 4
 
 Om slim gebruik te maken van deze hulpmiddelen kunnen we onze RegEx als volgt aanpassen: \w+\W*\w+@\w+\d*\.com
 
